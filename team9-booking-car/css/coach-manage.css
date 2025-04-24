@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+}
+
+aside {
+  width: 19.44%;
+  height: 100vh;
+  padding: 24px;
+
+  border-right: 1px solid #e4e7ec;
+  box-shadow: 6px 0 15px 0 rgba(155, 155, 155, 0.2);
+}
+
+aside .logo-img {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+aside .logo-img img {
+  width: fit-content;
+  height: 24px;
+  object-fit: cover;
+}
+
+aside .logo-img span {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+aside .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+aside .menu .item {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+aside .menu .item:hover {
+  background-color: #eff6ff;
+  cursor: pointer;
+}
+.menu .item:hover span {
+  color: #2563eb !important;
+}
+
+aside .menu .item img {
+  width: 16px;
+  height: 16px;
+}
+
+aside .menu .item span {
+  color: #374151;
+  line-height: 16px;
+}
+
+main {
+  flex: 1;
+  height: 100vh;
+  padding: 32px;
+
+  background-color: #f9fafb;
+}
+
+main .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .top .top-left {
+  width: fit-content;
+}
+
+main .top .top-left .p-1 {
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+
+main .top .top-left .p-2 {
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+
+main .top button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main .top button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+main .search {
+  width: 100%;
+  padding: 16px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  gap: 16px;
+}
+
+main .search .input {
+  background-color: #fff;
+  flex: 1;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+}
+
+main .search .input input {
+  flex: 1;
+  height: 100%;
+  border: none;
+}
+
+main .search .input input:focus {
+  outline: none;
+}
+
+main .search .input img {
+  width: 16px;
+  height: 16px;
+}
+
+main .search select {
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding-left: 10px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  background: url("../assets/icons/icon-drop.png") no-repeat right 8px center;
+  background-size: 24px;
+}
+
+thead tr th {
+  background-color: #e3e3e3 !important;
+}
+
+main .btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 24px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.table-data,
+.table {
+  margin: 0 !important;
+}
+
+main .btn-group p {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+main .btn-group .list-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+main .btn-group .list-btn button {
+  padding: 5px 14px 6px 13px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  background-color: rgba(0, 0, 0, 0);
+
+  color: #4b5563;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main .btn-group .list-btn button:hover {
+  background-color: #2563eb;
+  color: #fff;
+}

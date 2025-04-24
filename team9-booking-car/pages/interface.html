@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/interface.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="header">
+        <div class="left">
+          <img src="../assets/icons/bus.png" width="16px" height="16px" />
+          <span> &ensp;Hệ thống Đặt Vé Xe Toàn Quốc </span>
+        </div>
+        <div class="right">
+          <img src="../assets/icons/email.png" width="15px" height="12px" />
+          <span> &ensp;info.vivutoday@gmail.com </span>
+          <span>&ensp;|&ensp;</span>
+          <img src="../assets/icons/phone.png" width="15px" height="15px" />
+          <span> &ensp;1900 0152 </span>
+        </div>
+      </div>
+      <nav>
+        <div class="component">
+          <img src="../assets/icons/Component 3.png" />
+        </div>
+        <img src="../assets/images/logo.png" width="100px" height="60px" />
+        <ul class="list">
+          <li><a href="#" id="interface">TRANG CHỦ</a></li>
+          <li><a href="#">GIỚI THIỆU</a></li>
+          <li><a href="#">THÔNG TIN NHÀ XE</a></li>
+          <li><a href="#">BẾN XE</a></li>
+          <li><a href="#">TUYẾN ĐƯỜNG</a></li>
+          <li><a href="#">KIỂM TRA VÉ</a></li>
+          <li>
+            <button id="searchButton">
+              <img src="../assets/icons/search.png" width="16px" height="18px" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="brand">
+      <img src="../assets/images/brand.png" width="100%" id="brand" />
+      <img src="../assets/images/vivutoday-home-banner-768x243.jpg.png" width="100%" id="mobile-brand">
+      <div class="optionBookTicketListOverLay">
+        <div class="optionBookTicketList">
+          <span class="optionBookTicket"
+            >Điểm Khởi Hành <br /><span class="text2"
+              >Chọn Điểm Khởi Hành</span
+            ></span
+          >
+          <span class="optionBookTicket"
+            >Điểm Đến <br /><span class="text2">Chọn Điểm Đến</span></span
+          >
+          <span class="optionBookTicket"
+            >Ngày Khởi Hành <br /><span class="text2"
+              ><img
+                src="../assets/icons/calendar.png"
+                width="16px"
+                height="16px"
+              />
+              Chọn Điểm Đến</span
+            ></span
+          >
+          <span class="optionBookTicket" id="specialOne"
+            ><button class="findButton" id="specialOneButton">
+              <img src="../assets/icons/search.png" width="18px" height="18px" />
+              Tìm Chuyến Xe
+            </button></span
+          >
+        </div>
+      </div>
+    </div>
+    <content>
+      <div class="optionBookTicketListContentOverLay">
+        <div class="optionBookTicketListContent">
+          <span class="optionBookTicket"
+            >Điểm Khởi Hành <br /><span class="text2"
+              >Chọn Điểm Khởi Hành</span
+            ></span
+          >
+          <span class="optionBookTicket"
+            >Điểm Đến <br /><span class="text2">Chọn Điểm Đến</span></span
+          >
+          <span class="optionBookTicket"
+            >Ngày Khởi Hành <br /><span class="text2"
+              ><img
+                src="../assets/icons/calendar.png"
+                width="16px"
+                height="16px"
+              />
+              Chọn Điểm Đến</span
+            ></span
+          >
+          <span class="optionBookTicket" id="specialOne"
+            ><button class="findButton" id="specialOneButton">
+              <img src="../assets/icons/search.png" width="18px" height="18px" />
+              Tìm Chuyến Xe
+            </button></span
+          >
+        </div>
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Tuyến Đường Phổ Biến</span>
+      </div>
+      <div class="placeFirstList">
+        <img
+          src="../assets/icons/back.png"
+          width="26.67px"
+          height="26.67px"
+          id="backListButton"
+        />
+        <div class="item">
+          <img
+            src="../assets/images/tuyen-sai-gon-vung-tau.webp.png"
+            width="240px"
+            height="159px"
+          />
+          <br />
+          <span class="placeName">Sài Gòn – Vũng Tàu</span>
+          <br />
+          <span class="placePrice">150.000đ</span>
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/tuyen-sai-gon-mui-ne.webp.png"
+            width="240px"
+            height="159px"
+          />
+          <br />
+          <span class="placeName">Sài Gòn – Mũi Né</span>
+          <br />
+          <span class="placePrice">180.000đ</span>
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/tuyen-sai-gon-nha-trang.webp.png"
+            width="240px"
+            height="159px"
+          />
+          <br />
+          <span class="placeName">Sài Gòn – Nha Trang</span>
+          <br />
+          <span class="placePrice">240.000đ</span>
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/tuyen-nha-trang-da-lat.webp.png"
+            width="240px"
+            height="159px"
+          />
+          <br />
+          <span class="placeName">Sài Gòn – Đà Lạt</span>
+          <br />
+          <span class="placePrice">200.000đ</span>
+        </div>
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="continueListButton"
+        />
+      </div>
+      <div class="hiddenButton">
+        <img src="../assets/icons/back.png" width="26.67px" height="26.67px" id="backListButton2"/>
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="continueListButton2"
+        />
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Ưu Đãi Nổi Bật</span>
+      </div>
+      <div class="discount">
+        <img
+          src="../assets/icons/back.png"
+          width="26.67px"
+          height="26.67px"
+          id="discountBackButton"
+          class="button"
+        />
+        <img
+          src="../assets/images/banner.jpg"
+          width="76.41%"
+          height="146px"
+          class="image"
+        />
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="discountContinueButton"
+          class="button"
+        />
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Nhà Xe Phổ Biến</span>
+      </div>
+      <div class="placeFirstList">
+        <img
+          src="../assets/icons/back.png"
+          width="26.67px"
+          height="26.67px"
+          id="busListBackButton"
+        />
+        <div class="busList">
+          <img
+            src="../assets/images/nha-xe-an-hoa-hiep-ca-mau-kon-tum.jpg.png"
+            width="272px"
+            height="159px"
+          />
+          <br />
+          <span class="busOwner">Nhà xe An Hòa Hiệp</span>
+        </div>
+        <div class="busList">
+          <img src="../assets/images/futa.png" width="272px" height="159px" />
+          <br />
+          <span class="busOwner">Nhà xe Futa Hà Sơn</span>
+        </div>
+        <div class="busList">
+          <img
+            src="../assets/images/nha-xe-vu-linh-limousine-chat-luong.png.png"
+            width="272px"
+            height="159px"
+          />
+          <br />
+          <span class="busOwner">Nhà xe Vũ Linh</span>
+        </div>
+        <div class="busList">
+          <img
+            src="../assets/images/nha-xe-toan-thang-vung-tau.jpg (1).png"
+            width="272px"
+            height="159px"
+          />
+          <br />
+          <span class="busOwner">Nhà xe Toàn Thắng</span>
+        </div>
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="busListContinueButton"
+        />
+      </div>
+      <div class="hiddenButton">
+        <img src="../assets/icons/back.png" width="26.67px" height="26.67px" id="busListBackButton2"/>
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="busListContinueButton2"
+        />
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Top Reviews</span>
+      </div>
+      <div class="scenery">
+        <div class="firstRow">
+          <div class="saigon">
+            <img src="../assets/images/saigon.png" width="825px" height="360px" />
+          </div>
+          <div class="vungtau">
+            <img src="../assets/images/vungtau.png" width="320px" height="360px" />
+          </div>
+        </div>
+        <div class="secondRow">
+          <div class="leftPic">
+            <div class="dalat">
+              <img src="../assets/images/dalat.png" width="320px" height="175px" />
+            </div>
+            <div class="quynhon">
+              <img
+                src="../assets/images/quynhon.png"
+                width="320px"
+                height="175px"
+              />
+            </div>
+          </div>
+          <div class="rightPic">
+            <div class="hanoi">
+              <img src="../assets/images/hanoi.png" width="825px" height="360px" />
+            </div>
+          </div>
+        </div>
+        <div class="thirdRow">
+          <div class="rightPic">
+            <div class="nhatrang">
+              <img
+                src="../assets/images/nhatrang.png"
+                width="825px"
+                height="360px"
+              />
+            </div>
+          </div>
+          <div class="leftPic">
+            <div class="danang">
+              <img
+                src="../assets/images/danang.png"
+                width="320px"
+                height="175px"
+              />
+            </div>
+            <div class="phanthiet">
+              <img
+                src="../assets/images/phanthiet.png"
+                width="320px"
+                height="175px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Bến Xe Phổ Biến</span>
+      </div>
+      <div class="placeFirstList">
+        <img src="../assets/icons/back.png" width="26.67px" height="26.67px" id="busStationBackButton"/>
+        <div class="busList">
+          <img src="../assets/images/BX-1.jpg.png" width="272px" height="159px" />
+          <br />
+          <span class="busOwner">Bến xe Miền Đông Mới</span>
+        </div>
+        <div class="busList">
+          <img src="../assets/images/BX-2.png" width="272px" height="159px" />
+          <br />
+          <span class="busOwner">Bến xe Miền Tây</span>
+        </div>
+        <div class="busList">
+          <img src="../assets/images/BX-3.png" width="272px" height="159px" />
+          <br />
+          <span class="busOwner">Bến xe Giáp Bát</span>
+        </div>
+        <div class="busList">
+          <img src="../assets/images/BX-4.png" width="272px" height="159px" />
+          <br />
+          <span class="busOwner">Bến xe Mỹ Đình</span>
+        </div>
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="busStationContinueButton"
+        />
+      </div>
+      <div class="hiddenButton">
+        <img src="../assets/icons/back.png" width="26.67px" height="26.67px" id="busStationBackButton2"/>
+        <img
+          src="../assets/icons/continue.png"
+          width="26.67px"
+          height="26.67px"
+          id="busStationContinueButton2"
+        />
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Nền Tảng Kết Nối Người Dùng Và Nhà xe</span>
+      </div>
+      <div class="famousPlatform">
+        <div class="firstPlatformRow">
+          <div class="platform">
+            <img
+              src="../assets/icons/satisfaction.png.png"
+              width="64px"
+              height="64px"
+            />
+            <div>
+              <span class="highlightText">ĐÁP ỨNG MỌI NHU CẦU TÌM KIẾM</span>
+              <br />
+              <span class="normalText"
+                >Với hơn 5000+ tuyến đường và 1500+ nhà xe trên khắp cả
+                nước</span
+              >
+            </div>
+          </div>
+          <div class="platform">
+            <img
+              src="../assets/icons/ribbon.png.png"
+              width="64px"
+              height="64px"
+            />
+            <div>
+              <span class="highlightText">ĐẢM BẢO CÓ VÉ</span>
+              <br />
+              <span class="normalText"
+                >Hoàn ngay 150% nếu không có vé, mang đến hành trình trọn
+                vẹn</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="secondPlatformRow">
+          <div class="platform">
+            <img
+              src="../assets/icons/cooperate.png.png"
+              width="64px"
+              height="64px"
+            />
+            <div>
+              <span class="highlightText">CAM KẾT GIỮ VÉ</span>
+              <br />
+              <span class="normalText"
+                >Vivutoday cam kết hoàn 150% nếu nhà xe không giữ vé</span
+              >
+            </div>
+          </div>
+          <div class="platform">
+            <img
+              src="../assets/icons/telephone.png.png"
+              width="64px"
+              height="64px"
+            />
+            <div>
+              <span class="highlightText">TỔNG ĐÀI HỖ TRỢ KHÁCH HÀNG 24/7</span>
+              <br />
+              <span class="normalText"
+                >Giải quyết kịp thời vấn đề của khách hàng một cách nhanh
+                chóng</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-header">
+        <span class="contentHeader">Vivutoday Được Nhắc Tên Trên</span>
+      </div>
+      <div class="logoDonator">
+        <img src="../assets/icons/24h-logo.png.png" width="10%" height="50vh" class="logoItem" />
+        <img src="../assets/icons/vtc-news.png.png" width="10%" height="50vh" class="logoItem" />
+        <img src="../assets/icons/Eva-Logo.png.png" width="10%" height="50vh" class="logoItem" />
+        <img src="../assets/icons/Afamily.png.png" width="10%" height="50vh" class="logoItem" />
+        <img
+          src="../assets/icon/logo-bao-ba-ria-vung-tau.png.png"
+          width="10%"
+          height="50vh" class="logoItem"
+        />
+        <img
+          src="../assets/icon/logo-bao-da-nang-online.png.png"
+          width="10%"
+          height="50vh" class="logoItem"
+        />
+      </div>
+    </content>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>Tin tức</h4>
+          <a href="#">Xe Limousine – Đẳng cấp hạng thương gia thời đại mới</a>
+          <a href="#"
+            >Tổng quan các bến xe Vũng Tàu – Giới thiệu thông tin lịch trình nhà
+            xe</a
+          >
+          <a href="#">Top 31 nhà xe limousine, xe giường nằm đi Đà Lạt</a>
+        </div>
+        <div class="footer-column">
+          <h4>Tuyến đường</h4>
+          <a href="#">Xe đi Buôn Mê Thuột từ Sài Gòn</a>
+          <a href="#">Xe đi Vũng Tàu từ Sài Gòn</a>
+          <a href="#">Xe đi Nha Trang từ Sài Gòn</a>
+          <a href="#">Xe đi Đà Lạt từ Sài Gòn</a>
+          <a href="#">Xe đi Sapa từ Hà Nội</a>
+          <a href="#">Xe đi Hải Phòng từ Hà Nội</a>
+          <a href="#">Xe đi Vinh từ Hà Nội</a>
+        </div>
+        <div class="footer-column">
+          <h4>Xe Limousine</h4>
+          <a href="#">Xe Limousine đi Đà Lạt từ Sài Gòn</a>
+          <a href="#">Xe Limousine đi Vũng Tàu từ Sài Gòn</a>
+          <a href="#">Xe Limousine đi Nha Trang từ Sài Gòn</a>
+          <a href="#">Xe Limousine đi Hải Phòng từ Hà Nội</a>
+          <a href="#">Xe Limousine đi Hạ Long từ Hà Nội</a>
+          <a href="#">Xe Limousine đi Sapa từ Hà Nội</a>
+          <a href="#">Xe Limousine đi Quảng Ninh từ Hà Nội</a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-list">
+          <h4>Bến xe</h4>
+          <a href="#">Bến xe Miền Đông</a>
+          <a href="#">Bến xe Trung tâm Đà Nẵng</a>
+          <a href="#">Bến xe Gia Lâm</a>
+          <a href="#">Bến xe Mỹ Đình</a>
+          <a href="#">Bến xe An Sương</a>
+          <a href="#">Bến xe Nước Ngầm</a>
+          <a href="#">Bến xe Miền Tây</a>
+        </div>
+        <div class="footer-list">
+          <h4>Nhà xe</h4>
+          <a href="#">Xe Sao Việt</a>
+          <a href="#">Xe Hoa Mai</a>
+          <a href="#">Xe Hạ Long Travel</a>
+          <a href="#">Xe Quốc Đạt</a>
+          <a href="#">Xe Thanh Bình Xanh</a>
+          <a href="#">Xe Thiện Thành Limousine</a>
+          <a href="#">Xe Hồng Sơn Phú Yên</a>
+          <a href="#">Xe Tiến Oanh</a>
+        </div>
+        <div class="footer-list">
+          <h4></h4>
+          <a href="#">Xe Hải Âu</a>
+          <a href="#">Xe Chín Nghĩa</a>
+          <a href="#">Xe Hưng Long</a>
+          <a href="#">Xe Kim Mạnh Hùng</a>
+          <a href="#">Xe Tuấn Hưng</a>
+          <a href="#">Xe Khanh Phong</a>
+          <a href="#">Xe An Anh (Quê Hương)</a>
+          <a href="#">Xe Minh Quốc</a>
+        </div>
+        <div class="footer-list">
+          <h4></h4>
+          <a href="#">Xe Văn Minh</a>
+          <a href="#">Xe Anh Tuyến</a>
+          <a href="#">Xe Điền Linh</a>
+          <a href="#">Xe Hạnh Cafe</a>
+          <a href="#">Xe Tuấn Nga</a>
+          <a href="#">Xe Ngọc Ánh Sài Gòn</a>
+          <a href="#">Xe Hùng Cường</a>
+          <a href="#">Xe Thuận Tiến</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <div>
+            <h4>Về Chúng Tôi</h4>
+            <a href="#">Giới Thiệu Vevutoday</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Giá trị cốt lõi</a>
+          </div>
+          <div>
+            <h4>Hỗ Trợ</h4>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Chính sách điều khoản và giao dịch chung</a>
+            <a href="#">Chính sách đổi trả và hoàn tiền</a>
+            <a href="#">Chính sách thanh toán</a>
+            <a href="#">Quy chế hoạt động</a>
+          </div>
+          <div>
+            <h4>Liên hệ</h4>
+            <a href="#"
+              ><strong>Hotline: 1900 0152 </strong><br /><small
+                >(Cước phí: 3.000 đồng/phút)</small
+              ></a
+            >
+            <a href="#"
+              ><strong>Hotline: 1900.996.678</strong><br /><small
+                >(Cước phí: 1.000 đồng/phút)</small
+              ></a
+            >
+            <a href="#"
+              ><strong>Hotline: 1900.0179</strong><br /><small
+                >Cước phí: 8000đ/phút (dịch vụ đặt vé nhanh 24/7)</small
+              ></a
+            >
+          </div>
+          <div>
+            <h4>Chứng nhận</h4>
+            <img
+              src="../assets/icon/dmca_protected_15_120.png.png"
+              alt="DMCA"
+            />
+            <img src="../assets/icon/handle_cert.png.png" alt="NCSC" />
+            <img src="../assets/icon/BCT-LOGO.webp.png" alt="Bộ Công Thương" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

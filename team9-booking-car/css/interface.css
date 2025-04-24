@@ -1,0 +1,894 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header {
+  background-color: #1295db;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 11.8%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.brand {
+  margin-top: 90px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.component {
+  display: none;
+}
+
+.right span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  opacity: 60%;
+}
+
+nav {
+  width: 100%;
+  height: fit-content;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding: 0px 11.8%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 41px;
+  letter-spacing: 0.28px;
+  vertical-align: middle;
+  color: #1190d4;
+  transition: all 0.2s linear;
+}
+
+#interface{
+  color: #ffffff;
+  border: 1px solid #1190d4;
+  border-radius: 7px;
+  background: #1190d4;
+  padding: 10px;
+}
+
+a:hover {
+  color: #ffffff;
+  border: 1px solid #1190d4;
+  border-radius: 7px;
+  background: #1190d4;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+
+#searchButton {
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 4.25px 8.2px 7.36px 8.2px;
+  color: #ffffff;
+  background-color: #ffa901;
+  border: none;
+}
+
+/* body */
+.optionBookTicket {
+  border: 1px solid #9e9e9e;
+  border-radius: 6px;
+  text-align: center;
+  padding: 24px 6.86%;
+  background-color: #ffffff;
+  color: #565656;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+#mobile-brand{
+  display: none;
+}
+
+.optionBookTicketList {
+  padding: 28.5px 0px;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+}
+
+.optionBookTicketListContent {
+  padding: 28.5px 0px;
+  width: 97%;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+}
+
+#brand {
+  position: relative;
+}
+
+#specialOne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffa901;
+  color: #ffffff;
+  border: none;
+}
+
+#specialOneButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffa901;
+  color: #ffffff;
+  border: none;
+}
+
+.text2 {
+  font-weight: 400;
+  font-size: 14.6px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #757575;
+}
+
+.findButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.optionBookTicketListOverLay {
+  padding: 7.3% 0px;
+  width: 83.5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+}
+
+.contentHeader {
+  border-left: 5px solid #ffa901;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.content-header {
+  padding: 8px 11.8%;
+  margin-top: 4%;
+  margin-bottom: 24px;
+}
+
+.item {
+  border: 1px solid rgba(236, 238, 235, 1);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 16px;
+  box-shadow: 0px 5px 5px 0px rgba(76, 76, 76, 0.1);
+  flex: 0 0 10%;
+}
+
+.busList {
+  border: 1px solid rgba(236, 238, 235, 1);
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0px 5px 5px 0px rgba(76, 76, 76, 0.1);
+  padding-bottom: 16px;
+}
+
+.item img {
+  margin-bottom: 12px;
+}
+
+.placeName {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(0, 97, 61, 1);
+}
+
+.placeFirstList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.placePrice {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(61, 84, 165, 1);
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.busOwner {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 16px;
+}
+
+.firstRow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.secondRow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.firstPlatformRow {
+  display: flex;
+  gap: 90px;
+}
+
+.secondPlatformRow {
+  display: flex;
+  gap: 90px;
+}
+
+.thirdRow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.leftPic {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.scenery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 75.5vh;
+}
+
+.famousPlatform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.highlightText {
+  color: #111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.normalText {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* danh sách logo */
+.logoDonator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+footer {
+  background-color: #fff7f5;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  padding: 40px 60px;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-top: 80px;
+}
+/* ===== Footer Top ===== */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  column-gap: 60px;
+}
+
+.footer-top .footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  display: block;
+  color: #767676;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-column a:hover {
+  color: #d94d00;
+}
+
+/* ===== Footer Middle ===== */
+.footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px dashed #ccc;
+  row-gap: 30px;
+  column-gap: 40px;
+}
+
+.footer-list {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-list h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  display: block;
+  color: #767676;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-list a:hover {
+  color: #d94d00;
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+  padding-top: 30px;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 40px;
+}
+
+.footer-info > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-info a {
+  display: block;
+  color: #767676;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-info strong {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.footer-info a:hover {
+  color: #d94d00;
+}
+
+.footer-info small {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.footer-info img {
+  display: block;
+  max-width: 100px;
+  margin-bottom: 8px;
+}
+
+.hiddenButton {
+  display: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 768px) {
+  .right {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+  .component {
+    display: block;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .optionBookTicketListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14.5px 14px;
+    margin-top: 24px;
+  }
+  .optionBookTicketList {
+    display: none;
+  }
+  #specialOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa901;
+    color: #ffffff;
+    border: none;
+  }
+  .optionBookTicketListOverLay {
+    display: none;
+  }
+  .optionBookTicketListContentOverLay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-header {
+    padding: 0px 10px;
+  }
+  .placeFirstList {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: unset;
+    padding: 0px 10px;
+  }
+  .item {
+    flex: 0 0 calc(102.5% / 3 - 20px);
+  }
+  .item img {
+    width: 100%;
+    height: 15vh;
+  }
+  .busList {
+    flex: 0 0 calc(102.5% / 3 - 20px);
+    order: 1;
+  }
+  .busList img {
+    width: 100%;
+    height: 15vh;
+  }
+  #backListButton {
+    display: none;
+  }
+  #continueListButton {
+    display: none;
+  }
+  .hiddenButton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  #busListBackButton {
+    display: none;
+  }
+
+  #busListContinueButton {
+    display: none;
+  }
+  .button {
+    order: 2;
+  }
+  .image {
+    order: 1;
+    width: 100%;
+  }
+  .discount {
+    display: flex;
+    padding: 0px 10px;
+  }
+  .saigon img {
+    width: 510.2px;
+    height: 98%;
+  }
+  .vungtau img {
+    width: 214.109px;
+    height: 98%;
+  }
+  .scenery {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: unset;
+    padding: 0px 10px;
+    gap: 6px;
+  }
+  .firstRow {
+    gap: 6px;
+  }
+  .secondRow {
+    gap: 6px;
+  }
+  .thirdRow {
+    gap: 6px;
+  }
+  .dalat img {
+    width: 214.109px;
+    height: 100%;
+  }
+  .quynhon img {
+    width: 214.109px;
+    height: 125%;
+  }
+  .hanoi img {
+    width: 510.2px;
+    height: 98%;
+  }
+  .nhatrang img {
+    width: 510.2px;
+    height: 98%;
+  }
+  .danang img {
+    width: 214.109px;
+    height: 100%;
+  }
+  .phanthiet img {
+    width: 214.109px;
+    height: 128%;
+  }
+  #busStationBackButton {
+    display: none;
+  }
+  #busStationContinueButton {
+    display: none;
+  }
+  .platform {
+    width: calc(50vh - 20px);
+    padding: 0px 10px;
+  }
+  .logoDonator {
+    overflow: hidden;
+    justify-content: unset;
+    padding: 0px 50px;
+    gap: 61px;
+  }
+  .logoItem {
+    width: calc(100% / 4);
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  #brand{
+    display: none;
+  }
+  #mobile-brand{
+    display: block;
+  }
+  .right {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+  .component {
+    display: block;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .optionBookTicketListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14.5px 14px;
+    margin-top: 24px;
+  }
+  .optionBookTicketList {
+    display: none;
+  }
+  #specialOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa901;
+    color: #ffffff;
+    border: none;
+  }
+  .optionBookTicketListOverLay {
+    display: none;
+  }
+  .optionBookTicketListContentOverLay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-header {
+    padding: 0px 10px;
+  }
+  .placeFirstList {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: unset;
+    padding: 0px 10px;
+  }
+  .item {
+    flex: 0 0 100%;
+  }
+  .item img {
+    width: 100%;
+    height: 30vh;
+  }
+  .busList {
+    flex: 0 0 100%;
+    order: 1;
+  }
+  .busList img {
+    width: 100%;
+    height: 30vh;
+  }
+  #backListButton {
+    display: none;
+  }
+  #continueListButton {
+    display: none;
+  }
+  .hiddenButton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  #busListBackButton {
+    display: none;
+  }
+
+  #busListContinueButton {
+    display: none;
+  }
+  .button {
+    order: 2;
+  }
+  .image {
+    order: 1;
+    width: 100%;
+    height: 15vh;
+  }
+  .discount {
+    display: flex;
+    padding: 0px 10px;
+  }
+  .saigon img {
+    width: 250.6px;
+    height: 96%;
+  }
+  .vungtau img {
+    width: 104.145px;
+    height: 96%;
+  }
+  .scenery {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: unset;
+    padding: 0px 10px;
+    gap: 6px;
+    width: 100%;
+  }
+  .firstRow {
+    gap: 6px;
+    width: 100%;
+  }
+  .secondRow {
+    gap: 6px;
+    width: 100%;
+  }
+  .thirdRow {
+    gap: 6px;
+    width: 100%;
+  }
+  .dalat img {
+    width: 104.145px;
+    height: 56.955px;
+  }
+  .quynhon img {
+    width: 104.145px;
+    height: 56.955px;
+  }
+  .hanoi img {
+    width: 250.6px;
+    height: 124.164px;
+  }
+  .nhatrang img {
+    width: 250.6px;
+    height: 124.164px;
+  }
+  .danang img {
+    width: 104.145px;
+    height: 56.955px;
+  }
+  .phanthiet img {
+    width: 104.145px;
+    height: 56.955px;
+  }
+  #busStationBackButton {
+    display: none;
+  }
+  #busStationContinueButton {
+    display: none;
+  }
+  .platform {
+    width: 50vh;
+    padding: 0px 10px;
+  }
+  .logoDonator {
+    overflow: hidden;
+    justify-content: unset;
+    gap: 42.26px;
+    padding: 0px 40px;
+  }
+  .firstPlatformRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .secondPlatformRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logoItem {
+    flex: 0 0 calc(120% / 2 - 42.26px)
+  }
+}

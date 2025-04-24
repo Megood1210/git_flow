@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-nav {
+  width: 100%;
+  height: fit-content;
+
+  position: fixed;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  background-color: #1295db;
+  padding: 0 170px;
+}
+
+header .heading {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .heading .heading-left,
+header .heading .heading-right .item {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+header .heading .heading-left img,
+header .heading .heading-right .item img {
+  width: 16px;
+  height: 16px;
+}
+
+header .heading .heading-left span,
+header .heading .heading-right .item span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+header .heading .heading-right {
+  display: flex;
+  gap: 12px;
+}
+
+header .heading .heading-right .item span {
+  opacity: 0.6;
+}
+
+header .heading .heading-right .line-vertical {
+  height: 16px;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .heading .heading-left span:hover,
+header .heading .heading-left img:hover,
+header .heading .heading-right .item span:hover,
+header .heading .heading-right .item img:hover,
+nav .menu .item a:hover,
+a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  padding: 0 170px;
+  box-shadow: 0 2px 20px rgba(96, 96, 96, 0.3);
+
+  display: flex;
+  gap: 90px;
+}
+
+nav img {
+  width: 100px;
+  height: 100%;
+}
+
+nav .menu {
+  height: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+nav .menu .item {
+  border-radius: 7px;
+  padding: 0 10.5px;
+  width: fit-content;
+}
+nav .menu .item a {
+  text-decoration: none;
+  color: #1190d4;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+
+nav .menu .search {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffa901;
+  padding: 4.25px 8.2px 7.36px 8.2px;
+}
+
+nav .menu .search img {
+  width: 16.37px;
+  height: 16px;
+}
+
+nav .menu-bar {
+  display: none;
+  width: 27px;
+  height: 27px;
+}
+
+/* click vao item trong menu */
+.link-active {
+  background: #1190d4;
+}
+
+.link-active a {
+  color: #fff !important;
+}
+
+/* main */
+main {
+  padding: 0 170px 80px 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+main .title {
+  width: fit-content;
+  margin-top: 44px;
+  margin-bottom: 28px;
+  border-left: 4px solid #ffa901;
+
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 4px 12px;
+}
+
+main .list-coach {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .list-coach .item {
+  width: calc((100% - 60px) / 4);
+  height: 286px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.12);
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .list-coach .item img {
+  width: 100%;
+  height: 170px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  object-fit: cover;
+}
+
+main .list-coach .item .info {
+  margin-top: 12px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+main .list-coach .item .info .title-coach {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .list-coach .item .info .location {
+  display: flex;
+  gap: 4px;
+}
+
+main .list-coach .item .info .location p {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .btn-group {
+  width: fit-content;
+  height: fit-content;
+  margin: 24px auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+main .btn-group .list-btn {
+  display: flex;
+  gap: 8px;
+}
+
+main .btn-group button {
+  border-radius: 99px;
+  border: 2px solid #000;
+  padding: 6px 11.5px;
+  background-color: #ffffff;
+
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+main .btn-group .list-btn .btn-active {
+  border-radius: 99px;
+  border: 2px solid #1295db;
+  padding: 6px 11.5px;
+  background-color: #1295db;
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+main .describe {
+  text-align: left;
+  width: 100%;
+
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* footer */
+footer {
+  background: #fff7f5;
+  padding: 48px 170px 0px 170px;
+}
+
+footer .info-coach {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contact,
+footer .info-coach .info-1,
+footer .info-coach .info-2 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer .info-coach .info-1 .news {
+  flex: 2;
+  height: fit-content;
+}
+
+footer .info-coach .info-1 .roads,
+footer .info-coach .info-1 .limousine {
+  flex: 1;
+}
+
+footer .info-coach .info-1 .news,
+footer .info-coach .info-1 .roads,
+footer .info-coach .info-1 .limousine {
+  height: 359.5px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 30px 16px;
+  gap: 12px;
+}
+
+footer .contact .about-us,
+footer .info-coach .info-2 .bus-station {
+  width: calc(100% / 4);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 30px 16px;
+  gap: 12px;
+}
+
+footer .info-coach .info-2 .list-title-coach {
+  height: fit-content;
+  display: flex;
+  flex: 1;
+}
+
+.list-title-coach .coach {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px 30px 16px;
+}
+
+footer .info-coach .info-1 .news p,
+footer .info-coach .info-1 .roads p,
+footer .info-coach .info-1 .limousine p,
+footer .info-coach .info-2 .bus-station p,
+footer .info-coach .info-2 .coach p,
+footer .contact .about-us p {
+  color: #000;
+  font-size: 14.766px;
+  font-weight: 700;
+}
+
+footer .info-coach .info-1 .news a,
+footer .info-coach .info-1 .roads a,
+footer .info-coach .info-1 .limousine a,
+footer .info-coach .info-2 .bus-station a,
+.list-title-coach .coach a,
+footer .contact .about-us a {
+  text-decoration: none;
+  color: #767676;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.about-us .item-phone .p-1 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.about-us .img1 {
+  height: 55.06px;
+  max-width: 98px;
+  object-fit: cover;
+}
+.about-us .img2 {
+  height: 44.53px;
+  max-width: 98px;
+  object-fit: cover;
+}
+.about-us .img3 {
+  height: 37.06px;
+  max-width: 98px;
+  object-fit: cover;
+}
+
+.about-us .item-phone .p-2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 11.3px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1279px) {
+  header,
+  nav {
+    padding: 0 70px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  main {
+    padding: 0 11.8% 80px 11.8%;
+  }
+
+  /*  */
+  footer {
+    padding: 48px 100px 0px 100px;
+  }
+
+  footer .info-coach {
+    flex-direction: row;
+  }
+
+  footer .info-coach .info-1,
+  footer .info-coach .info-2 {
+    flex-direction: column;
+  }
+
+  footer .contact .about-us {
+    width: calc(100% / 2);
+  }
+
+  footer .info-coach .info-1 .news,
+  footer .info-coach .info-1 .roads,
+  footer .info-coach .info-1 .limousine {
+    height: fit-content;
+    flex: initial;
+  }
+
+  footer .info-coach .info-2 .bus-station {
+    width: 100%;
+  }
+
+  footer .info-coach .info-2 .list-title-coach {
+    flex-direction: column;
+    width: 100%;
+  }
+  .list-title-coach .coach {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 869px) and (max-width: 990px) {
+  header,
+  nav {
+    padding: 0 10px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  main .list-coach .item {
+    width: calc((100% - 40px) / 3);
+  }
+
+  main {
+    padding: 0 100px 80px 100px;
+  }
+
+  /*  */
+  footer {
+    padding: 48px 40px 0px 40px;
+  }
+  footer .info-coach {
+    flex-direction: row;
+  }
+
+  footer .info-coach .info-1,
+  footer .info-coach .info-2 {
+    flex-direction: column;
+  }
+
+  footer .contact .about-us {
+    width: calc(100% / 2);
+  }
+
+  footer .info-coach .info-1 .news,
+  footer .info-coach .info-1 .roads,
+  footer .info-coach .info-1 .limousine {
+    height: fit-content;
+    flex: initial;
+  }
+
+  footer .info-coach .info-2 .bus-station {
+    width: 100%;
+  }
+
+  footer .info-coach .info-2 .list-title-coach {
+    flex-direction: column;
+    width: 100%;
+  }
+  .list-title-coach .coach {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 868px) {
+  header .heading .heading-right {
+    display: none;
+  }
+
+  header .heading {
+    justify-content: center;
+  }
+
+  header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .menu-bar {
+    display: block;
+    width: 27px;
+    height: 27px;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  main .list-coach .item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  main {
+    padding: 0 16px 80px 16px;
+  }
+
+  /*  */
+  footer {
+    padding: 48px 16px 0px 16px;
+  }
+  footer .info-coach {
+    flex-direction: row;
+  }
+
+  footer .info-coach .info-1,
+  footer .info-coach .info-2 {
+    flex-direction: column;
+  }
+
+  footer .contact .about-us {
+    width: calc(100% / 2);
+  }
+
+  footer .info-coach .info-1 .news,
+  footer .info-coach .info-1 .roads,
+  footer .info-coach .info-1 .limousine {
+    height: fit-content;
+    flex: initial;
+  }
+
+  footer .info-coach .info-2 .bus-station {
+    width: 100%;
+  }
+
+  footer .info-coach .info-2 .list-title-coach {
+    flex-direction: column;
+    width: 100%;
+  }
+  .list-title-coach .coach {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .heading .heading-right {
+    display: none;
+  }
+
+  header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .heading {
+    justify-content: center;
+  }
+
+  nav {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .menu-bar {
+    display: block;
+    width: 27px;
+    height: 27px;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  main .list-coach .item {
+    width: 100%;
+  }
+
+  main {
+    padding: 0 16px 80px 16px;
+  }
+
+  /*  */
+  footer {
+    padding: 48px 16px 0px 16px;
+  }
+
+  footer .info-coach .info-1,
+  footer .info-coach {
+    flex-direction: column;
+  }
+
+  footer .info-coach .info-2 {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  footer .contact .about-us {
+    width: calc(100% / 2);
+  }
+
+  footer .info-coach .info-1 .news,
+  footer .info-coach .info-1 .roads,
+  footer .info-coach .info-1 .limousine {
+    height: fit-content;
+    flex: initial;
+  }
+
+  footer .info-coach .info-2 .bus-station {
+    width: 45%;
+    height: fit-content;
+  }
+
+  footer .info-coach .info-2 .list-title-coach {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .list-title-coach .coach {
+    width: 100%;
+  }
+}
