@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 4736px;
+    top: 40px;
+    left: 40px;
+}
+
+.header {
+    width: 100%;
+    height: 110px;
+    box-shadow: 1px 1px 10px 0px #00000026;
+}
+
+.heading {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.41px;
+    padding-right: 170px;
+    padding-bottom: 0.4px;
+    padding-left: 170px;
+    background: #1295DB;
+}
+
+.title {
+    display: flex;
+    width: 190px;
+    height: 16px;
+    gap: 4px;
+    padding-top: 7px;
+}
+
+.bus {
+    width: 16px;
+    height: 16px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.contact {
+    display: flex;
+    width: 300px;
+    height: 16px;
+    gap: 4px;
+    padding-top: 7px; 
+}
+
+.email{
+    width: 16px;
+    height: 16px;
+}
+
+.text-email{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF ;
+    height: 14px;
+    border-right:1px solid ;
+    padding-right: 10px;
+    opacity: 0.6;
+}
+
+.phone{
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.text-phone{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF ;
+    height: 14px;
+    opacity: 0.6;
+}
+
+.pagination {
+    width: 100%;
+    height: 60px;
+    gap: 90px;
+    padding-right: 170px;
+    padding-left: 170px;
+    display: flex;
+}
+
+
+.vivu {
+    width: 100px;
+    height: 60px;
+}
+
+.pages {
+    width: 95%;
+    gap: 8px;
+    height: 60px;
+  }
+
+  .link {
+    list-style-type: none;
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+    gap: 20px;
+  }
+
+  .page {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 41px;
+    letter-spacing: 0.28px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  .page:hover {
+    background-color: #1190D4;
+  }
+
+  .link-1 {
+    text-decoration: none;
+    color: #1190D4;
+  }
+
+  .page:hover .link-1 {
+    color: white;
+  }
+
+.logo{
+    width: 35px;
+    height: 30px;
+    padding-top: 1px;
+    background-color: #FFA901;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.banner {
+    position: relative;
+    background-image: url('../assets/image/Station.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+
+  .banner-content {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .banner-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  .banner-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+.company-contact {
+    width: 730px;
+    height: 56px;
+    margin-top: 50px;
+    color:#333333;
+}
+
+.phone-number {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    width: 397px;
+    height: 24px;
+    margin-left: 128px;
+}
+
+.address {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right; 
+    margin-top: 5px;
+}
+
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-left: 328px;
+    color: #333333;
+}
+
+.station{
+    width:726px; 
+    height:465px; 
+    margin-left: 328px; 
+    margin-top: 30px;
+}
+
+.content-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 328px;
+    margin-top: 30px;
+}
+
+.content-heading-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 328px;
+    margin-top: 10px;
+}
+
+.station-list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 328px;
+    margin-top: 10px;
+}
+
+.station.info{
+    width: 726px;
+    height: 228px;
+    top: 2068px;
+    left: 357px;
+    gap: 12px;
+}
+
+.img-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align:center; 
+    margin-top: 10px;
+    color: #333333;
+    font-style: italic;
+    font-size: 14.2px;
+    line-height: 22.68px;
+}
+
+.content-heading-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 328px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 70px;
+    background-color: #FFF7F5;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    padding: 40px 60px;
+    border-top: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 400; 
+    letter-spacing: 0%;
+    vertical-align: middle;
+  } 
+  /* ===== Footer Top ===== */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    column-gap: 60px;
+  }
+  
+  .footer-top .footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-column h4 {
+    font-size: 15px;
+    font-weight: 600; /* Chỉ hơi đậm cho tiêu đề */
+    margin-bottom: 12px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-column a:hover {
+    color: #d94d00;
+  }
+  
+  /* ===== Footer Middle ===== */
+  .footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  
+  .footer-list {
+    flex: 1;
+    min-width: 160px;
+  }
+  
+  .footer-list h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-list a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-list a:hover {
+    color: #d94d00;
+  }
+  
+  /* ===== Footer Bottom ===== */
+  .footer-bottom {
+    padding-top: 30px;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  
+  .footer-info > div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-info a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .footer-info strong{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+  }
+  
+  .footer-info a:hover {
+    color: #d94d00;
+  }
+  
+  .footer-info small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .footer-info img {
+    display: block;
+    max-width: 100px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 1024px) {
+    .phone-number{
+        margin-left: -152px;
+    }
+
+    .address{
+        margin-right: 280px;
+    }
+
+    .content{
+        margin-left: 50px;
+    }
+    
+    .station{
+        margin-left: 50px;
+    }
+
+    .content-title{
+        margin-left: 50px;
+    }
+
+    .content-heading-1{
+        margin-left: 50px;
+    }
+
+    .station-list{
+        margin-left: 50px;
+    }
+
+    .content-heading-2{
+        margin-left: 50px;
+    }
+
+    .img-name{
+        text-align: center;
+    }
+  }
+
