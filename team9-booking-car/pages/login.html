@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="phenikaa" src="../assets/icon/Phenikaa.png" alt="">
+        </div>
+        <div class="main">
+            <div class="content">
+                <h4 class="heading">Đăng nhập</h4>
+                <form class="input" action="">
+                    <label class="usage" for="">Email</label>
+                    <input class="enter" id="email" type="email" placeholder="Nhập email của bạn">
+                    <label class="usage" for="">Password</label>
+                    <input class="enter" id="password"  type="password" placeholder="••••••••">
+                    <div class="login-options">
+                        <label class="remember">
+                          <input style="margin-top: -0.25px;" type="checkbox" id="rememberMe" />
+                          Nhớ thông tin đăng nhập
+                        </label>
+                        <a href="#" class="forgot-password">Quên mật khẩu</a>
+                      </div>    
+                    <div class="action">
+                        <button class="login">Đăng nhập</button>
+                        <button class="social">
+                            <img src="../assets/icon/Google.png" alt="" width="15px" height="15px"/>
+                                Đăng nhập với Google
+                        </button>
+                    </div>   
+                    <p id="loginMessage" style="color: red; margin-top: 10px;"></p>               
+                </form>
+                <div class="account">
+                    <p class="none">Chưa có tài khoản?<a href="#">Đăng ký ngay</a></p>
+                </div>
+            </div>
+        </div>
+        <footer>© Phenikaa 2077</footer>
+        <section>
+            <img src="../assets/image/Rikkei.png" alt="">
+        </section>
+    </div>
+    <script src="../js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
